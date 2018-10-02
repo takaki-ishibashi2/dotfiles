@@ -1,4 +1,5 @@
 # bash
+alias ..="cd ../"
 alias ll="ls -lh "
 alias s=". ~/.bash_profile "
 alias v="vim "
