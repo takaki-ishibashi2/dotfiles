@@ -5,7 +5,7 @@ alias ....="cd ../../.."
 alias ~="cd ~"
 alias grep="grep --color=auto "
 alias ll="ls -lh "
-alias s=". ~/.bash_profile "
+alias s="source ~/.bash_profile "
 alias v="vim "
 
 # git
