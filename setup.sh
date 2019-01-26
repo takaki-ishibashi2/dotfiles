@@ -2,9 +2,11 @@
 
 set -e
 
-script_dir=$(pwd);
-dot_vim=".vimrc"
-dot_bash_profile=".bash_profile"
+SCRIPT_DIR=$(pwd)
+files=(".vimrc" ".bash_profile")
 
-ln -is "${script_dir}/${dot_vim}" "${HOME}"
-ln -is "${script_dir}/${dot_bash_profile}" "${HOME}"
+for file in "${files[@]}"; do
+  #ln  $file "${SCRIPT_DIR}/tmp/${file}"
+  ln -sf  $file "${SCRIPT_DIR}/tmp/${file}"
+  
+done
